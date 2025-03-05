@@ -10,7 +10,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     background-color: var(--Lilas);
     height: 100vh;
     width: 100vw;
@@ -39,7 +40,7 @@ section#login {
     transition-timing-function: ease;
 }
 
-form > div.campo {
+form>div.campo {
     display: block;
     font-size: 1em;
     width: 100%;
@@ -48,11 +49,17 @@ form > div.campo {
     margin: 5px 0px;
 }
 
-div.campo > label {
+div.campo>label {
     display: none;
 }
 
-section#login > div#imagem {
+div.campo>i {
+    width: 40px;
+    padding: 5px;
+}
+
+
+section#login>div#imagem {
     display: block;
     background: #5f2c82 url(pexels-fundo.jpg) no-repeat;
     background-size: cover;
@@ -60,27 +67,28 @@ section#login > div#imagem {
     height: 200px;
 }
 
-section#login > div#formulario {
+section#login>div#formulario {
     display: block;
     padding: 10px;
 }
 
-div#formulario > h1 {
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-form > div.campo > input[type=email] {
+form>div.campo>input[type=email] {
     border: none;
     height: 30px;
 }
 
-form > div.campo > input[type=password] {
+form>div.campo>input[type=password] {
     border: none;
     height: 30px;
 }
 
-form > input[type=submit] {
+form>input[type=submit] {
+    margin-top: 10px;
     display: block;
     font-size: 1em;
     width: 100%;
@@ -90,12 +98,12 @@ form > input[type=submit] {
     border-radius: 5px;
 }
 
-form > input[type=submit]:hover {
+form>input[type=submit]:hover {
     background: linear-gradient(to top, #681313, red);
     font-size: 1.02em;
 }
 
-form > a.btn {
+form>a.btn {
     display: block;
     text-align: center;
     font-size: 1em;
@@ -104,7 +112,7 @@ form > a.btn {
     text-decoration: none;
 }
 
-form > a.btn:hover {
+form>a.btn:hover {
     color: purple;
     font-size: 1.01em;
 }
